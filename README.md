@@ -20,4 +20,4 @@ https://developer.mozilla.org/
 
 ## Sử dụng
 
-Chạy demo vào file trangchu.html
+Chạy demo vào file index.html
