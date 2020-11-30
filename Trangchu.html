@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Teddy</title>
+	 <link rel="stylesheet" type="text/css" href="./Trangchu.css">
+   
+</head>
+<body>
+
+	<div class="div1">
+		</style>
+		<table>
+			<tr>
+			<td><img src="./img/logo.png" width="80px" height="60px"></td>
+
+            <td><font color="#FF3366"><h2>ÔM LÀ YÊU</h2></font></td>
+            <td><a style="padding-left: 100px" > <input type="text" style="width: 500px" placeholder="Nhập sản phẩm cần tìm kiếm" > </a></td>
+            <!-- <td><a href="" ><img src="icontimkiem.png" alt="" style="width: 30px" ></a></td> -->
+            <td><img src="./img/dt.png" alt="" style="width: 60px" ></td>
+            <td><font color="#FF3366"  ><h2 >0978.509.322</h2></font></td>
+            </tr>
+		</table>
+	</div>
+		
+
+	<div class="menu">
+			<ul class="root" >
+				<li><a href="Trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="">GẤU TEDDY</a>
+                     <ul class="submenu">
+                    	<li><a href="">Gấu TEDDY CAO CẤP</a></li>
+                    	<li><a href="">Gấu TEDDY NHỎ</a></li>
+                    	
+                    	<li><a href="">Gấu TEDDY GIÁ RẺ</a></li>
+                    </ul>
+                </li>
+                <li><a href="">THÚ NHỒI BÔNG</a>
+                     <ul class="submenu">
+                    	<li><a href="">CHÓ BÔNG</a></li>
+                    	<li><a href="">MÈO BÔNG</a></li>
+                    	
+                    </ul>
+                </li>
+                <li><a href="">GỐI BÔNG</a>
+                    <ul class="submenu">
+                    	<li><a href="">GỐI ÔM</a></li>
+                    	<li><a href="">GỐI CHỮ U</a></li>
+                    	
+                    </ul>
+                </li>
+                <li><a href="">DỊCH VỤ</a>
+                    <ul class="submenu">
+                    	<li><a href="">GÓI QUÀ SIÊU ĐẸP</a></li>
+                    	<li><a href="">TẶNG THIỆP MIỄN PHÍ</a></li>
+                    	
+                    </ul>
+                </li>
+			</ul>
+
+			
+
+
+    </div>
+	<hr color="#FF3366" style="width: 100%">
+		<br>
+
+    <div class="slide" style="width: 100%" style="z-index: 1;">
+			<img src="./img/Banner1.png" style="width: 1150px; height: 500px;" class="slide-item" number="0"  >
+			<img src="./img/Banner2.png" style="display: none;width: 1150px; height: 500px;" class="slide-item" number="1"  >
+			<img src="./img/banner3.png"  style="display: none;width: 1150px ; height: 500px;" class="slide-item" number="2" >
+			<a href="#" class="next" >></a>
+            <a href="#" class="prev"><</a>
+		</div>
+		<script src="jquery-3.5.0.js"></script>
+        <script>
+     $(()=>{
+
+      $('.next').click(function(){
+        changeImage('next');
+      })
+
+      $('.prev').click(function(){
+        changeImage('prev');
+      })
+
+     })
+
+     function changeImage(type){
+      let imgSelectVisible = $('img.slide-item:visible');
+      let imgVisible = parseInt(imgSelectVisible.attr('number'));
+      let eqNumber = type === 'next' ? imgVisible + 1 : imgVisible - 1;
+
+      if (eqNumber >= $('.slide-item').length){
+          eqNumber = 0
+      }
+  
+      $('img.slide-item').eq(eqNumber).fadeIn()
+
+      imgSelectVisible.fadeOut();
+      }
+       setInterval(changeImage,3000)
+      
+   </script>
+        
+    </div>
+
+
+    <div class="giaohang" style="margin-top: 2px;" >
+    	<ul>
+    		<li >
+    			<a href=""><img src="./img/a1.png" alt="" style="width: 560px; height: 176px; padding-left: 60px; "></a>
+                <a href=""><img src="./img/a2.png" alt="" style="width: 560px; height: 176px ;padding-left: 30px;"></a>
+    		</li>
+    		
+    	</ul>
+
+    </div>
+
+    <div class="hihi">
+    	
+                <div class="d-flex">
+                	<div class="one">
+	                	<a href="giaohangtannha.html"><img src="./img/OTO.png" alt=""></a>
+	                	<a href="giaohangtannha.html"><strong class="strong-dlex">GIAO HÀNG TẬN NHÀ </strong></a>
+                	</div>
+                	<div class="one length">
+                			<a href="goiquasieudep.html"><img src="./img/hopqua.png" alt="" ></a>
+		                    <a href="goiquasieudep.html"><strong class="strong-dlex2" >GÓI QUÀ SIÊU  ĐẸP</strong>	</a>
+                	</div>	
+                	<div class="one checked">
+                			<img src="./img/giatgau.png" alt="" >
+		                <strong class="strong-dlex3" >CÁCH GẶT GẤU BÔNG</strong>	
+                	</div>
+                	<div class="one clearx">
+                			<img src="./img/baohanh.png" alt="" >
+		                	<strong class="strong-dlex4" >BẢO HÀNH</strong>	
+                	</div>	
+                </div>
+    </div>
+
+    <div class="gauhot">
+                	<h1 style="text-align:center;color: #3333FF;">GẤU BÔNG HOT</h1>
+                	<hr color="#FF3366" style="width: 1100px; text-align:center;">
+                	<div class="gauhot1" style="padding-left: 130px">
+                	<a href="meohoangthuong.html"><img src="./img/hot1.jpg" alt="" style="width: 270px; "></a>
+                	<a href="bupbeembe.html"><img src="./img/hot2.jpg" alt="" style="width: 270px; "></a>
+                	<a href="ciubong.html"><img src="./img/hot3.jpg" alt="" style="width: 270px; "></a>
+                	<img src="./img/hot4.jpg" alt="" style="width: 270px; ">
+                	</div>
+
+                    <div class="gauhot2" >
+                    	<a href="meohoangthuong.html" style="padding-left: 160px">Mèo bông hoàng thượng</a>
+                    	<a href="bupbeembe.html" style="padding-left: 100px">Búp bê bông em bé áo kẻ</a>
+                    	<a href="ciubong.html" style="padding-left: 140px">Ciu bông dài</a>
+                    	<a href="" style="padding-left: 180px">Lợn siu cute</a>
+
+                    </div>
+    </div>
+                
+   
+               
+
+            
+    
+    <hr color="#FF3366" style="width: 100%;">
+    <br>
+
+    <div class="footer" >
+        <div class="footer1">
+            <ul style="width:200px">
+                <li>Hệ thống cửa hàng</li>
+                <li>Hiệp Hoà-Bắc Giang-ViệtNam_097865432_07643643</li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul style="width:200px">
+                <li>Chuyển khoản online</li>
+                <li>VIETCOMBANK</li>
+            </ul>
+        </div>
+        <div>
+            <ul style="width:150px">
+                <li>FANPAGE</li>
+                
+            </ul>
+        </div>
+        <div>
+            <ul style="width:300px">
+                <li> 6 LÝ DO CHỌN TEDDY</li>
+                <li>Gói quà- Nén nhỏ gấu - Tặng thiệp miễn phí</li>
+                <li>Giao hàng nội thành siêu tốc - Giao đúng giờ</li>
+                <li>Nhận hàng trước khi thanh toán</li>
+                <li>Địa chỉ shop dễ tìm</li>
+            </ul>
+        </div>
+    </div>
+    <hr color="#FF3366" style="width: 100%;">
+</body>
+</html>
